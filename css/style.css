@@ -1,0 +1,56 @@
+*{
+    font-family: 'Merriweather', serif;
+}
+
+body{
+    background: black;
+}
+
+.container{
+    max-width:800px;
+    margin:auto;
+    border:5px solid white;
+    background:white;
+}
+
+h1{
+    text-align: center;
+}
+
+#zoomed img, #thumbnail img{
+    width:100%;
+    height:auto;
+}
+
+#zoomed{
+    position:relative;
+}
+
+#left{
+    position: absolute;
+    top:50%;
+    left:0;
+}
+
+#right{
+    position: absolute;
+    top:50%;
+    right:0;
+}
+
+#thumbnail{
+    display:grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 5px;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in 1 forwards;
+}
