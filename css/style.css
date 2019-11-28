@@ -18,6 +18,7 @@ h1{
 }
 
 #zoomed img, #thumbnail img{
+
     width:100%;
     height:auto;
 }
